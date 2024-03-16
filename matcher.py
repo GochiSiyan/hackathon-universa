@@ -28,6 +28,9 @@ def web(answer : str):
         key = generator_agent.invoke(api.result)
 
         return {
+             # I would like the api.result to be parsed to json through json.loads function
+             # but for some reason api.result always returns invalid json strings
+             # tried solution to use GenericSolver to correct the invalid json strings but it is hard to get it right.
             "Recommended API" : api.result,
             "Required input" : key.required.split(",")
         }
