@@ -11,3 +11,4 @@ sentencepiece==0.1.99
 transformers==4.30.2
 typing_extensions==4.9.0
 annotated-types==0.6.0
+flask==3.0.2

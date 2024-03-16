@@ -28,8 +28,8 @@ def web(answer : str):
         key = generator_agent.invoke(api.result)
 
         return {
-            "Recommended API:" : json.loads(api.result.replace("\_","_")), #replace method is required because for some reason api.result have "\_" which disrupt json.loads function
-            "Required input:" : key.required.split(",")
+            "Recommended API" : api.result,
+            "Required input" : key.required.split(",")
         }
 
 
